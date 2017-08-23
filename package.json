@@ -1,0 +1,22 @@
+{
+  "name": "catro-eixos-informe",
+  "version": "1.0.0",
+  "description": "Middleware de informes de procesado para catro-eixos-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "keywords": [
+    "catro-eixos-js",
+    "informe"
+  ],
+  "author": "Francisco Maseda Muiño <frmadem@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "catro-eixos-js": "^2.1.1",
+    "chai": "^4.1.1",
+    "immutable": "^3.8.1",
+    "mocha": "^3.5.0"
+  },
+  "dependencies": {}
+}
