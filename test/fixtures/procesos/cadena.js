@@ -10,7 +10,8 @@ module.exports = class extends Proceso{
     return [
       "__a",
       "__b",
-      "__c"
+      "__c",
+      "__apuntarResultados"
     ]
   }
 
@@ -28,4 +29,7 @@ module.exports = class extends Proceso{
     this["cadena"] = this["cadena"] + "_C_";
   }
 
+  __apuntarResultados(){
+    this.resultado("cadena", this["cadena"]);
+  }
 }

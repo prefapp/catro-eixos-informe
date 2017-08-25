@@ -64,4 +64,34 @@ describe("CatroEixosInforme", function(){
 
   })
 
+  it("Realiza un informe complejo, con varios procesos", 
+
+    function(hecho){
+
+      refProcesador.ejecutar(
+
+        new Tarea("test_main", {
+
+          proceso: "Test.main"
+
+        })
+
+      )
+        .then(({resultados}) => {
+          
+          expect(resultados.informe).to.be.an("object");
+  
+          expect(resultados.informe.cadenaVale).to.equal(
+            "MI_CADENA_B_"
+          );
+
+          expect(resultados.informe.cadenaObtenida).to.equal(
+            "MI_CADENA_B__C_"
+          )
+
+          hecho();
+        })
+
+    }
+  )
 })
