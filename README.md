@@ -16,13 +16,20 @@ const {Informe} = require("catro-eixos-informe");
 
 class MiInforme extends Informe{
 
-    static ENTRADA(){
+    ENTRADA(){
         return 'Familia.proceso_entrada'
     }
 
     //ejecución de un paso del informe
     Familia_proceso_entrada__pasoFoo(refProceso){
         this.agregar(`${en el paso foo "a" vale ${refProceso.a} `);
+    }
+
+    //en el caso de un paso del proceso de entrada se puede sustituir por self
+    self__pasoFoo2(refProceso){ 
+        
+    // seria equivalente a: Familia_proceso_entrada__pasoFoo2
+
     }
 
 }

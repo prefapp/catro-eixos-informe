@@ -2,7 +2,7 @@ const Informe = require("../../../lib/informe.js");
 
 module.exports = class extends Informe{
 
-  static ENTRADA(){
+  ENTRADA(){
     return 'Test.cadena' 
   }
 

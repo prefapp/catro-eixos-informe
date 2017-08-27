@@ -2,7 +2,7 @@ const Informe = require("../../../lib/informe.js");
 
 module.exports = class extends Informe{
 
-  static ENTRADA(){
+  ENTRADA(){
     return 'Test.main' 
   }
 
@@ -10,7 +10,8 @@ module.exports = class extends Informe{
     return {resultados: "informe"}
   }
 
-  Test_main__cadena(refProceso){
+ // Test_main__cadena(refProceso){
+   self__cadena(refProceso){
     this.agregar("cadenaObtenida", refProceso["cadena_obtenida"]);
   }
 
