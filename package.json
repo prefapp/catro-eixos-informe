@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Middleware de informes de procesado para catro-eixos-js",
   "main": "index.js",
+  "repository": "https://github.com/prefapp/catro-eixos-informe.git", 
   "scripts": {
     "test": "mocha --recursive"
   },
